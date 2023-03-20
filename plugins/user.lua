@@ -9,4 +9,13 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "ruifm/gitlinker.nvim",
+    config = function() 
+      require("gitlinker").setup({
+        mappings = nil
+      })
+    end
+  }
+  
 }

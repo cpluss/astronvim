@@ -29,6 +29,20 @@ return {
       end,
       desc = "Switch Buffers",
     },
+    ["<C-S-g>"] = {
+      function() 
+        require("gitlinker").get_buf_range_url("n", {action_callback = require("gitlinker.actions").open_in_browser}, {silent = true})
+      end,
+      desc = "Open current line in git remote"
+    },
+  },
+  v = {
+    ["<C-S-g>"] = {
+      function() 
+        require("gitlinker").get_buf_range_url("v", {action_callback = require("gitlinker.actions").open_in_browser}, {})
+      end,
+      desc = "Open current line in git remote"
+    },
   },
   t = {
     -- setting a mapping to false will disable it
