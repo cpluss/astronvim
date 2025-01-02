@@ -66,5 +66,33 @@ return {
         },
       },
     },
+
+    -- specific configuration for golang
+    -- config = {
+    --   gopls = {
+    --     settings = {
+    --       gopls = {
+    --         gofumpt = true,
+    --         semanticTokens = true,
+    --         usePlaceHolders = true,
+    --         directoryFilters = {
+    --           "-bazel-bin",
+    --           "-bazel-out",
+    --           "-bazel-testlogs",
+    --           "-bazel-mypkg"
+    --         },
+    --         codelenses = {
+    --           gc_details = false,
+    --           regenerate_cgo = false,
+    --           generate = false,
+    --           test = false,
+    --           tidy = false,
+    --           upgrade_dependency = false,
+    --           vendor = false
+    --         }
+    --       }
+    --     }
+    --   }
+    -- }
   }
 }
